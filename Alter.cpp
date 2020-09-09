@@ -7,11 +7,10 @@ main()
     int alter;
     cout<<"Bitte Alter Eingeben :";
     cin>>alter;
-    if(alter>=18)
+    if( alter>=18 && alter<110 )
     {
         cout<<"Sie sind Vollahrig"<<endl;
-    }
-    if(alter<18)
+    } else
     {
         cout<<"Sie sind noch nicht Volljahrig"<<endl;
     }
