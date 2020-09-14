@@ -20,28 +20,23 @@ main()
     {
         erg=zahl1+zahl2;
     }
-    if(wahl==2)
-    {
-        erg=zahl1-zahl2;
-    }
-    if(wahl==3)
-    {
-        erg=zahl1*zahl2;
-    }
-    if(wahl==4)
-    {
-        erg=zahl1/zahl2;
-    }
-    if(wahl>4)
-    {
-        cout<<"Wahl nicht zutreffend"<<endl;
-        erg=0;
-    }
-    if(wahl<1)
-    {
-        cout<<"Wahl nicht zutreffend"<<endl;
-        erg=0;
-    }
+        else if(wahl==2)
+        {
+            erg=zahl1-zahl2;
+        }
+            else if(wahl==3)
+            {
+                erg=zahl1*zahl2;
+            }
+                else if(wahl==4)
+                {
+                    erg=zahl1/zahl2;
+                }
+                    else 
+                    {
+                        cout<<"Wahl nicht zutreffend"<<endl;
+                        erg=0;
+                    }
 
     cout<<"Das ergebnis ist:"<<erg;
 }

@@ -13,13 +13,13 @@ main()
     {
         cout<<"Der Wert ist negativ"<<endl;
     }
-    else if ( erg == 0)
-    {
-        cout<<"Das ist die Nullstelle"<<endl;
-    }
-    else 
-    {
-        cout<<"Der Wert ist positiv"<<endl;
-    }
+        else if ( erg == 0)
+        {
+            cout<<"Das ist die Nullstelle"<<endl;
+        }
+            else 
+            {
+                cout<<"Der Wert ist positiv"<<endl;
+            }
     cout <<erg;
 }

@@ -10,8 +10,9 @@ main()
     if( alter>=18 && alter<110 )
     {
         cout<<"Sie sind Vollahrig"<<endl;
-    } else
-    {
-        cout<<"Sie sind noch nicht Volljahrig"<<endl;
     }
+        else
+        {
+            cout<<"Sie sind noch nicht Volljahrig"<<endl;
+        }
 }
