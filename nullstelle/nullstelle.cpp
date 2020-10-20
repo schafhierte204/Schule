@@ -64,6 +64,35 @@ int main()
                 cout<<"x2="<<sx-sqr<<endl;
             } 
         }
+        else if(wahl== 'N'||wahl=='n')
+        {
+            double a,p,q,rt;
+            cout<<"Sie haben die normalform(ax²+px+q) ausgewählt bitte geben sie a,p,q an"<<endl;
+            cin>>a;
+            cin>>p;
+            cin>>q;
+            cout<<"# Y-Achse"<<endl;
+            cout<<"f(0)"<<endl;
+            cout<<"f(0)="<<q<<endl;
+            if(pow(p/2,2)-q<0)
+            {
+                cout<<"Es gibt keine Nullstelle"<<endl;
+            }
+            else
+            {
+                cout<<"# X-Achse"<<endl;
+                cout<<"f(x)=0"<<endl;
+                cout<<a<<"x²+"<<p<<"x+"<<q<<"=0  |/a"<<endl;
+                cout<<"x²+"<<p/a<<"x+"<<q/a<<"=0"<<endl;
+                cout<<"x1/2=p/2±√(p/2)²-q'"<<endl;
+                cout<<"x1/2="<<p<<"/2K±√("<<p<<"/2)²-"<<q<<"'"<<endl;
+                cout<<"x1/2="<<p/2<<"±√"<<p/2<<"²-"<<q<<"'"<<endl;
+                cout<<"x1/2="<<p/2<<"±√"<<pow(p/2,2)-q<<"'"<<endl;
+                rt=sqrt(pow(p/2,2)-q);
+                cout<<"x1="<<p/2+rt<<endl;
+                cout<<"x2="<<p/2-rt<<endl;
+            }
+        }
         else
         {
             cout<<"Diese Form kenne ich nicht";
