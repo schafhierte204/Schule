@@ -1,5 +1,4 @@
 #include <iostream>
-#include <ncurses.h>
 #include <cmath>
 using namespace std;
 
@@ -7,7 +6,7 @@ int main()
 {
     char wahl;
     cout<<"Welchen funktionstypen wollen sie"<<endl;
-    cout<<"L für lineare funktion"<<endl<<"Q für quadratische funktionen"<<endl;
+    cout<<"L fur lineare funktion"<<endl<<"Q fur quadratische funktionen"<<endl;
     cin>>wahl;
     if(wahl=='l'||wahl=='L')
     {
@@ -67,7 +66,7 @@ int main()
         else if(wahl== 'N'||wahl=='n')
         {
             double a,p,q,rt;
-            cout<<"Sie haben die normalform(ax²+px+q) ausgewählt bitte geben sie a,p,q an"<<endl;
+            cout<<"Sie haben die normalform(ax^2+px+q) ausgewählt bitte geben sie a,p,q an"<<endl;
             cin>>a;
             cin>>p;
             cin>>q;
