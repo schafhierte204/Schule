@@ -3,27 +3,56 @@ using namespace std;
 
 main()
 {
-    double start,stop,schritt;
-    double a,b;
-    COUt<<"Bitte Geben sie a Ein."<<endl;
-    cin>>a;
-    cout>>"Bitte Geben sie b Ein."<<endl;
+    int start,stop,schritt;
+    int m,b;
+    char wahl;
+    int y,yalt;
+    cout<<"Bitte Geben sie m Ein."<<endl;
+    cin>>m;
+    cout<<"Bitte Geben sie b Ein."<<endl;
     cin>>b;
-    cout<<"Bitte StartWert Eingben :"<<endl;
-    cin>> start;
-    cout<<"Bitte Endwert Eingeben :"<<endl;
-    cin>> stop;
-    cout<<"Bitte Shrittweite Eingeben :"<<endl;
-    cin>> schritt;
-    if(start<stop&&schritt>0)
+    cout<<"Was moechten sie sehen nullstelle(n),wertetabelle(w), Schnittpunkt Y-Achse(y) oder alles(a)"<<endl;
+    cin>> wahl;
+    if(wahl=='w'||wahl=='a')
     {
-        for(int i=start;i<stop;i=i+schritt)
+        cout<<"Bitte Startwert Eingben :"<<endl;
+        cin>> start;
+        cout<<"Bitte Endwert Eingeben :"<<endl;
+        cin>> stop;
+        cout<<"Bitte Shrittweite Eingeben :"<<endl;
+        cin>> schritt;
+        if(start<stop&&schritt>0)
         {
-            cout<<i<<"="<<i*3+5<<endl;
+
+            for(int i=start;i<=stop;i=i+schritt)
+            {
+                yalt=y;
+                y=i*m+b;
+                if((yalt>0&&y<=0)||(yalt<0&&y>=0))
+                {
+                    cout<<"nullstelle"<<endl;
+                }
+                if(b<0)
+                {
+                    cout<<"f("<<i<<")="<<i<<"*"<<m<<b<<"="<<y<<endl;
+                }
+                else
+                {
+                    cout<<"f("<<i<<")="<<i<<"*"<<m<<"+"<<b<<"="<<y<<endl;
+                }
+            }
+        }
+        else
+        {
+            cout<<"Bitte Uberprufen sie ihre Eingaben"<<endl;
         }
     }
-    else
+    if (wahl=='n'||wahl=='a')
     {
-        cout<<"Bitte Uberprufen sie ihre Eingaben"<<endl;
+        cout<<"N=("<<-b/m<<"|0)"<<endl;
+    }
+    if (wahl=='y'||wahl=='a')
+    {
+        cout<<"Sy=(0|"<<b<<")"<<endl;
     }
 }
