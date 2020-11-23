@@ -4,9 +4,11 @@ using namespace std;
 
 int main()
 {
+    double x,erg;
     char wahl;
     cout<<"Welchen funktionstypen wollen sie"<<endl;
-    cout<<"L fur lineare funktion"<<endl<<"Q fur quadratische funktionen"<<endl;
+    cout<<"L fur lineare funktion"<<endl<<"Q fur quadratische funktionen"<<endl
+        <<"3 fur 3. Grad"<<endl;
     cin>>wahl;
     if(wahl=='l'||wahl=='L')
     {
@@ -96,6 +98,44 @@ int main()
         {
             cout<<"Diese Form kenne ich nicht";
         }
+    }
+    else if (wahl=='3')
+    {
+        bool pos;
+        double a,b,c,d;
+        double s=10;
+        cout<<"bitte geben sie a b c und d ein"<<endl;
+        cin>>a;
+        cin>>b;
+        cin>>c;
+        cin>>d;
+        x=0;
+        erg=a*pow(x,3)+b*pow(x,2)+c*x+d;
+        cout<<erg<<endl;
+        while(erg!=0)
+        {
+            cout<<erg<<endl;
+            if(erg>0)
+            {
+                x=x-s;
+                if(!pos)
+                {
+                    s=s/2;
+                }
+                pos=true;
+            }
+            else
+            {
+                x=x+s;
+                if(pos)
+                {
+                    s=s/2;
+                }
+                pos=false;
+            }
+            erg=a*pow(x,3)+b*pow(x,2)+c*x+d;
+        }
+        cout<<x;
     }
     else
     {
