@@ -8,10 +8,10 @@ main()
     double summe=0;
     int anzahl=0;
     cout<<"Bitte geben sie ihre zahlen ein"<<endl;
-    for(;weiter=='j';)
+    while(weiter=='j')
     {
         cin>>eingabe;
-        if(eingabe>0)
+        if(eingabe>0|eingabe<16)
         {
             summe=summe+eingabe;
             anzahl++;
@@ -23,5 +23,6 @@ main()
         cout<<"Wollen sie noch eine zahl eingeben(j/n)"<<endl;
         cin>>weiter;
     }
-    cout<<"Die summe der "<<anzahl<<" Zahlen ist "<<summe;
+    cout<<"Die summe der "<<anzahl<<" Zahlen ist "<<summe<<endl;
+    cout<<"Und der Duchnitt ist"<<summe/anzahl<<endl;
 }
