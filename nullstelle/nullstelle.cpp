@@ -110,9 +110,7 @@ int main()
         cin>>c;
         cin>>d;
         x=0;
-        erg=a*pow(x,3)+b*pow(x,2)+c*x+d;
-        cout<<erg<<endl;
-        while(erg!=0&&s>0.001)
+        do
         {
             cout<<erg<<endl;
             if(erg>0)
@@ -135,6 +133,7 @@ int main()
             }
             erg=a*pow(x,3)+b*pow(x,2)+c*x+d;
         }
+        while(erg!=0&&s>0.001);
         cout<<x;
     }
     else
