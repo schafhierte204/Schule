@@ -46,7 +46,7 @@ int main()
             sqr=pow((0-sx),2);
             cout<<a<<"*"<<sqr<<"+"<<sy<<endl;
             cout<<a*sqr+sy<<endl;
-            if(a>0&&sy>0||(a<0&&sy<0))
+            if((a>0&&sy>0)||(a<0&&sy<0))
             {
                 cout<<"Es gibt keine nullstelle"<<endl;
             }
@@ -112,7 +112,7 @@ int main()
         x=0;
         erg=a*pow(x,3)+b*pow(x,2)+c*x+d;
         cout<<erg<<endl;
-        while(erg!=0)
+        while(erg!=0&&s>0.001)
         {
             cout<<erg<<endl;
             if(erg>0)
