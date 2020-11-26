@@ -13,7 +13,6 @@ main()
     cout<<"input ende"<<endl;
 
     double p = (b-x1)/a;
-    cout<<p;
     double q = (c-x1*b-x1*x1*a)/a;
     cout<<q;
 
