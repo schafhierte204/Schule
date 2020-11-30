@@ -8,21 +8,26 @@ main()
     double summe=0;
     int anzahl=0;
     cout<<"Bitte geben sie ihre zahlen ein"<<endl;
-    while(weiter=='j')
+    for(;weiter=='j';)
     {
         cin>>eingabe;
-        if(eingabe>0|eingabe<16)
+        if(eingabe>=0||eingabe<16)
         {
             summe=summe+eingabe;
             anzahl++;
         }
         else
         {
-            cout<<"Die zahl muss positiv sein"<<endl;
+            cout<<"Die zahl muss zwischen 0 und 15 liegen"<<endl;
         }
         cout<<"Wollen sie noch eine zahl eingeben(j/n)"<<endl;
         cin>>weiter;
     }
     cout<<"Die summe der "<<anzahl<<" Zahlen ist "<<summe<<endl;
-    cout<<"Und der Duchnitt ist"<<summe/anzahl<<endl;
+    cout<<"Wollens sie den durchschnitt sehen?"<<endl;
+    cin>>weiter;
+    if(weiter=='j')
+    {
+        cout<<"Und der Durchschnitt ist"<<summe/anzahl<<endl;
+    }
 }
