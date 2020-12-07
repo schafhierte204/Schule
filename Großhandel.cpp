@@ -3,10 +3,10 @@ using namespace std;
 
 main()
 {
-    char food;
-    int anzahl,anzahlf,anzahlnf;
-    double sumf,sumnf;
-    double preis;
+    char food,wahl;
+    int anzahl=0,anzahlf=0,anzahlnf=0,anzahlg=0;
+    double sumf=0,sumnf=0;
+    double preis=0;
     for(int i=0;i<100;i++)
     {
         cout<<"Bitte geben sie nund preis, anzahl,und food(f) oder Non-food(n) ein."<<endl;
@@ -16,18 +16,28 @@ main()
         if(food=='f')
         {
             sumf+=preis;
-            anzahlf++;
-            anzahl++;
+            anzahlf+=anzahl;
+            anzahlg+=anzahl;
+            cout<<"Wollen sie einen weiteren artikel hinzufügen(j/n)"<<endl;
+            cin>>wahl;
         }
         else if (food=='n')
         {
             sumnf+=preis;
-            anzahlnf++;
-            anzahl++;
+            anzahlnf+=anzahl;
+            anzahl+=anzahl;
+            cout<<"Wollen sie einen weiteren artikel hinzufügen(j/n)"<<endl;
+            cin>>wahl;
         }
         else
         {
             cout<<"bitte geben sie f fur food und n fur non-food ein"<<endl;
+            wahl='j';
+        }
+        if(wahl=='j');
+        else
+        {
+            i=101;
         }
     }
     cout<<anzahlf<<" food items fur "<<sumf<<" zu 7\% also"<<sumf*1.07<<endl
