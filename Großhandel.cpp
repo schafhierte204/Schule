@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-main()
+int main()
 {
-    char food,wahl;
+    char food,wahl='j'; //While das erste mahl war
     int anzahl=0,anzahlf=0,anzahlnf=0,anzahlg=0;
     double sumf=0,sumnf=0;
     double preis=0;
-    for(int i=0;i<100;i++)
+    while(wahl=='j') //While Schleife //While Schleife
     {
         cout<<"Bitte geben sie nund preis, anzahl,und food(f) oder Non-food(n) ein."<<endl;
         cin>>preis;
@@ -33,11 +33,6 @@ main()
         {
             cout<<"bitte geben sie f fur food und n fur non-food ein"<<endl;
             wahl='j';
-        }
-        if(wahl=='j');
-        else
-        {
-            i=101;
         }
     }
     cout<<anzahlf<<" food items fur "<<sumf<<" zu 7\% also"<<sumf*1.07<<endl

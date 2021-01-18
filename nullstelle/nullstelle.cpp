@@ -150,6 +150,8 @@ int main()
         cin>>b;
         cin>>c;
         cin>>d;
+        grad3(a,b,c,d);
+
     }
     else
     {

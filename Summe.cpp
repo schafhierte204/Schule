@@ -3,12 +3,12 @@ using namespace std;
 
 main()
 {
-    char weiter='j';
+    char weiter;
     double eingabe;
     double summe=0;
     int anzahl=0;
     cout<<"Bitte geben sie ihre zahlen ein"<<endl;
-    for(;weiter=='j';)
+    do
     {
         cin>>eingabe;
         if(eingabe>=0||eingabe<16)
@@ -23,6 +23,7 @@ main()
         cout<<"Wollen sie noch eine zahl eingeben(j/n)"<<endl;
         cin>>weiter;
     }
+    while(weiter=='j');
     cout<<"Die summe der "<<anzahl<<" Zahlen ist "<<summe<<endl;
     cout<<"Wollens sie den durchschnitt sehen?"<<endl;
     cin>>weiter;
