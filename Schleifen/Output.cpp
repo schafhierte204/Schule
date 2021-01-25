@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-main()
+int main()
 {
     int reien;
     cout<<"Wiefiele Sternchen reien mochten sie haben"<<endl;

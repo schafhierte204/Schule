@@ -1,8 +1,7 @@
 #include <iostream>
-#include <conio.h>
 using namespace std;
 
-main()
+int main()
 {
 	int zahl1;
 	int zahl2;

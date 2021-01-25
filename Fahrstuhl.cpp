@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-main()
+int main()
 {
     int stockwerk;
     cout<<"Bitte geben sie Die Etage an auf die Sie fahren möchten(0-6)"<<endl;

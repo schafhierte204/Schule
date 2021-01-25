@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-main()
+int main()
 {
     int zahl1 = 34;
     int zahl2 = 25;
@@ -35,7 +35,7 @@ main()
             }
             else
             {
-                    if(zahl2<zahl3)
+                if(zahl2<zahl3)
                 {
                     cout<<"Der Kleinste Wert ist :"<<zahl2<<endl;
                 }

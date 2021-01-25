@@ -1,8 +1,7 @@
 #include <iostream>
-#include <conio.h>
 using namespace std;
 
-main()
+int main()
 {
     double x,erg;
     cout<<"Bitte Funktionswert Eingben :"<<endl;
@@ -12,13 +11,13 @@ main()
     {
         cout<<"Das Ergebnis ist negativ"<<endl;
     }
-        else if(erg==0)
-        {
-            cout<<"Das ist die Nullstelle"<<endl;
-        }
-            else
-            {
-                cout<<"Das Ergebnis ist positiv"<<endl;
-            }
+    else if(erg==0)
+    {
+        cout<<"Das ist die Nullstelle"<<endl;
+    }
+    else
+    {
+        cout<<"Das Ergebnis ist positiv"<<endl;
+    }
     cout<<erg<<"=3*x^2+7";
 }  

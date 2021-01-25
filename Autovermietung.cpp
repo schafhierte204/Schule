@@ -1,8 +1,7 @@
 #include <iostream>
-#include <conio.h>
 using namespace std;
 
-main()
+int main()
 {
     int preistag1 = 50;
     int preiskm1 = 5;
@@ -34,26 +33,26 @@ main()
         preiskm=preiskm1;
         preistag=preistag1;
     }
-        else if (wahl==2)
-        {
-            preiskm=preiskm2;
-            preistag=preistag2;
-        }
-            else if (wahl==3)
-            {
-                preiskm=preiskm3;
-                preistag=preistag3;
-            }
-                else if (wahl==4)
-                {
-                    preiskm=preiskm4;
-                    preistag=preistag4;
-                }
-                    else if (wahl==5)
-                    {
-                        preiskm=preiskm5;
-                        preistag=preistag5;
-                    }
+    else if (wahl==2)
+    {
+        preiskm=preiskm2;
+        preistag=preistag2;
+    }
+    else if (wahl==3)
+    {
+        preiskm=preiskm3;
+        preistag=preistag3;
+    }
+    else if (wahl==4)
+    {
+        preiskm=preiskm4;
+        preistag=preistag4;
+    }
+    else if (wahl==5)
+    {
+        preiskm=preiskm5;
+        preistag=preistag5;
+    }
 
     cout<<"Bitte Geben sie den alten und neuen Kilometer stand ein";
     cin>>kmalt;
@@ -69,9 +68,9 @@ main()
     cin>>tage;
     cout<<"Sie muessen fuer "<<tage<<" tage "<<tage*preistag<<" Euro bezahlen"<<endl;
     cout<<"Insgesamt macht das "<<km*preiskm+tage*preistag<<" Euro."<<endl;
-    
+
 
 
 }
 
-    
+

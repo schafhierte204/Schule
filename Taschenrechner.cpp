@@ -1,8 +1,7 @@
 #include <iostream>
-#include <conio.h>
 using namespace std;
 
-main()
+int main()
 {
     double zahl1,zahl2;
     int wahl;
@@ -20,23 +19,23 @@ main()
     {
         erg=zahl1+zahl2;
     }
-        else if(wahl==2)
-        {
-            erg=zahl1-zahl2;
-        }
-            else if(wahl==3)
-            {
-                erg=zahl1*zahl2;
-            }
-                else if(wahl==4)
-                {
-                    erg=zahl1/zahl2;
-                }
-                    else 
-                    {
-                        cout<<"Wahl nicht zutreffend"<<endl;
-                        erg=0;
-                    }
+    else if(wahl==2)
+    {
+        erg=zahl1-zahl2;
+    }
+    else if(wahl==3)
+    {
+        erg=zahl1*zahl2;
+    }
+    else if(wahl==4)
+    {
+        erg=zahl1/zahl2;
+    }
+    else 
+    {
+        cout<<"Wahl nicht zutreffend"<<endl;
+        erg=0;
+    }
 
     cout<<"Das ergebnis ist:"<<erg;
 }

@@ -1,8 +1,7 @@
 #include <iostream>
-#include <conio.h>
 using namespace std;
 
-main()
+int main()
 {
     int alter;
     cout<<"Bitte Alter Eingeben :";
@@ -11,8 +10,8 @@ main()
     {
         cout<<"Sie sind Vollahrig"<<endl;
     }
-        else
-        {
-            cout<<"Sie sind noch nicht Volljahrig"<<endl;
-        }
+    else
+    {
+        cout<<"Sie sind noch nicht Volljahrig"<<endl;
+    }
 }

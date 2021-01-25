@@ -1,8 +1,7 @@
 #include <iostream>
-#include <conio.h>
 using namespace std;
 
-main()
+int main()
 {
     int film,personen,p_person;
     int p_film1 = 15;
@@ -19,19 +18,19 @@ main()
     {
         p_person = p_film1;
     }
-        else if(film==2)
-        {
-            p_person = p_film2;
-        } 
-            else if(film==3)
-            {
-                p_person = p_film3;
-            } 
-                else
-                {
-                    cout<<"Bitte Geben sie einen unserer filme an";
-                    p_person = 0;
-                }
+    else if(film==2)
+    {
+        p_person = p_film2;
+    } 
+    else if(film==3)
+    {
+        p_person = p_film3;
+    } 
+    else
+    {
+        cout<<"Bitte Geben sie einen unserer filme an";
+        p_person = 0;
+    }
     cout<<"Wie viele Personen sind sie :";
     cin>>personen;
     cout<<"Sie muessen "<<p_person*personen<<" Euro zahlen";
