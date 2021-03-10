@@ -45,12 +45,14 @@ int main()
         }
     }
     while(fehler);
-    if(k2>hyp)
+
+    if(k2>hyp) // tauschen wenn kathete länger
     {
         tmp=hyp;
         hyp=k2;
         k2=tmp;
     }
+
     cout<<"Die zweite Kathete ist "<<sqrt(pow(hyp,2)-pow(k2,2))<<endl;
     cout<<"Der Erste Winkel beträgt "<<asin(k2/hyp)*180/pi<<"°"<<endl;
     cout<<"Der Zweite Winkel beträgt "<<acos(k2/hyp)*180/pi<<"°"<<endl;
