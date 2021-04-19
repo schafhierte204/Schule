@@ -23,6 +23,10 @@ int main()
         for (int i=0;i<20;i++)
         {
             cout<<wort[i]<<endl;
+            if ( wort[i]=='\0')
+            {
+                i=20;
+            }
         }
         break;
 
@@ -32,6 +36,10 @@ int main()
         for(int i=0;i<20;i++)
         {
             cout<<wort[i]<<trenn;
+            if ( wort[i]=='\0')
+            {
+                i=20;
+            }
         }
         cout<<endl;
         break;
