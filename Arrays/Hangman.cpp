@@ -39,7 +39,11 @@ int main()
 
     do
     {
-        cout<<ausgabe<<endl;
+        for (int i = 0;i<lange;i++)
+        {
+        cout<<ausgabe[i]<<" ";
+        }
+        cout<<endl;
 
         cout<<"Bitte Raten sie einen buchstaben"<<endl;
         cin>>eingabe;
