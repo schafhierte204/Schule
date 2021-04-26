@@ -5,7 +5,7 @@ int main()
 {
     char eingabe[20];
     int lange = 0;
-    bool end = false;
+    bool weiter = true;
 
     cout<<" Bitte geben sie ein wort ein"<<endl;
     cin>>eingabe;
@@ -13,13 +13,13 @@ int main()
     {
         if ( eingabe[lange]=='\0')
         {
-            end=true;
+            weiter=false;
         }
         else
         {
         lange++;
         }
     }
-    while (!end);
+    while (weiter);
     cout<<" das wort ist "<<lange<<" Buchstaben lang"<<endl;
 }
