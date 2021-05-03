@@ -41,7 +41,7 @@ int main()
     {
         for (int i = 0;i<lange;i++)
         {
-        cout<<ausgabe[i]<<" ";
+            cout<<ausgabe[i]<<" ";
         }
         cout<<endl;
 
