@@ -5,6 +5,7 @@ int main()
 {
     char wort[20]={0};
     char wahl,trenn;
+    int i = -1;
 
     cout<<"Bitte Geben sie ihren Namen ein"<<endl;
     cin>>wort;
@@ -14,36 +15,36 @@ int main()
 
     switch (wahl)
     {
+        // normal
         case 'n':
         cout<<wort;
         break;
 
+        //Untereinanger
         case 'u':
         cout<<endl;
-        for (int i=0;i<20;i++)
+        do
         {
             cout<<wort[i]<<endl;
-            if ( wort[i]=='\0')
-            {
-                i=20;
-            }
+            i++;
         }
+        while(wort[i]!='\0');
         break;
 
+        // Mit trennzeichen
         case 't':
         cout<<"Bitte Geben sie das trennzeichen ein"<<endl;
         cin>>trenn;
-        for(int i=0;i<20;i++)
+        do
         {
             cout<<wort[i]<<trenn;
-            if ( wort[i]=='\0')
-            {
-                i=20;
-            }
+            i++;
         }
+        while(wort[i]!='\0');
         cout<<endl;
         break;
 
+        //rueckwaertz
         case 'r':
         for(int i=19;i>=0;i--)
         {
@@ -52,6 +53,7 @@ int main()
         cout<<endl;
         break;
 
+        // Falsche eingabe
         default:
         cout<<"Bitte geben sie n,u,t oder r ein."<<endl;
     }

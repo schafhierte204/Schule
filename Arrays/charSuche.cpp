@@ -7,6 +7,7 @@ int main()
     char suchbuchstabe;
     int anz;
     char weiter;
+    int i = -1;
 
     cout<<" Bitte geben sie ein Wort ein."<<endl;
     cin >> wort;
@@ -17,17 +18,16 @@ int main()
         cout<<" Bitte geben sie den suchbuchstaben ein."<<endl;
         cin >>suchbuchstabe;
 
-        for(int i = 0;i<20;i++)
+        do
         {
             if(wort[i]==suchbuchstabe)
             {
                 anz++;
             }
-            else if(wort[i]=='\0')
-            {
-                i=20;
-            }
+            i++;
         }
+        while(wort[i]!='\0');
+
         cout<<"Der Buchstabe "<<suchbuchstabe<<" kam "<<anz<<" mal vor."<<endl;
         cout<<"Wollen sie nach einem weiteren Buchstaben suchen?(j/n)"<<endl;
         cin >> weiter;
