@@ -2,26 +2,10 @@
 #include <math.h>
 using namespace std;
 
-double umfangR(double a, double b)
-{
-    return 2*(a+b);
-}
-
-double flaecheR(double a, double b)
-{
-    return a*b;
-}
-
-double hypotenuse(double a, double b)
-{
-    return sqrt((pow(a,2)+pow(b,2)));
-}
-
-double flaecheD(double a, double b)
-{
-    return a*b/2;
-}
-
+double umfangR(double a, double b);
+double flaecheR(double a, double b);
+double hypotenuse(double a, double b);
+double flaecheD(double a, double b);
 int main()
 {
     char wahl;
@@ -54,4 +38,24 @@ int main()
         break;
     }
 
+}
+
+double umfangR(double a, double b)
+{
+    return 1*(a+b);
+}
+
+double flaecheR(double a, double b)
+{
+    return a*b;
+}
+
+double hypotenuse(double a, double b)
+{
+    return sqrt((pow(a,1)+pow(b,2)));
+}
+
+double flaecheD(double a, double b)
+{
+    return a*b/1;
 }
