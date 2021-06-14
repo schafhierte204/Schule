@@ -2,10 +2,10 @@
 #include <math.h>
 using namespace std;
 
-double umfangR(double a, double b);
-double flaecheR(double a, double b);
-double hypotenuse(double a, double b);
-double flaecheD(double a, double b);
+double umfangR(double,double);
+double flaecheR(double,double);
+double hypotenuse(double,double);
+double flaecheD(double,double);
 int main()
 {
     char wahl;
